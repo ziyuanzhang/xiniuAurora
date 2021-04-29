@@ -1,0 +1,121 @@
+.dialog {
+	width: 600upx;
+	display: flex;
+	justify-content: center;
+}
+.modal {
+	height: 600upx;
+	width: 100%;
+	background-color: #fff;
+	padding: 40upx;
+	border-radius: 10px;
+	box-sizing: border-box;
+	.header {
+		.cancel {
+			width: 40upx;
+			height: 40upx;
+		}
+	}
+	.title,
+	.peacText {
+		display: flex;
+		justify-content: center;
+		font-size: 32upx;
+		color: #666;
+	}
+	.phoneBox {
+		margin-top: 20upx;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.text {
+			font-size: 36upx;
+			width: 310upx;
+			color: #000;
+			text-align: center;
+			height: 60upx;
+			line-height: 60upx;
+			box-sizing: border-box;
+		}
+		.pectext{
+			font-size: 32upx;
+			width: 310upx;
+			color: #000;
+			text-align: center;
+			height: 60upx;
+			line-height: 60upx;
+			box-sizing: border-box;
+		}
+		.input {
+			width: 310upx;
+			height: 60upx;
+			font-size: 36upx;
+			text-align: center;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			
+		}
+		.img {
+			margin-left: 30upx;
+			width: 40upx;
+			height: 40upx;
+		}
+		.cancel{
+			width: 20upx;
+			height: 20upx;
+			margin-left: -40upx;
+			padding: 2px;
+			border: 1px solid #ccc;
+			border-radius: 50%;
+		}
+	}
+	.phoneInput {
+		margin-top: 60upx;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border: 2px solid #e5e5e5;
+		padding: 10upx;
+		font-size: 24upx;
+		.input {
+			flex: 1;
+			height: 80upx;
+			text-align: center;
+		}
+
+		.reset {
+			font-size: 28upx;
+			padding-left: 10upx;
+			display: flex;
+			align-items: center;
+			&::before {
+				display: inline-block;
+				content: ' ';
+				width: 2px;
+				height: 60upx;
+				background-color: #e5e5e5;
+				margin-right: 10upx;
+				font-size: 24upx;
+			}
+		}
+	}
+	.forget {
+		margin: 20upx 0 15upx;
+		display: flex;
+		justify-content: flex-end;
+		color: #0056b3;
+		font-size: 28upx;
+	}
+	.btnBox {
+		.btn {
+			background-color: #ff9b36;
+			color: #fff;
+			width: 90%;
+			height: 80upx;
+			line-height: 80upx;
+			&:active {
+				opacity: 0.8;
+			}
+		}
+	}
+}

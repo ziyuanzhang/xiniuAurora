@@ -1,0 +1,33 @@
+{
+	"pages": [{
+		"path": "pages/index/index",
+		"style": {
+			"navigationBarTitleText": "极光分期"
+		}
+	}, {
+		"path": "pages/install/install",
+		"style": {}
+	}, {
+		"path": "pages/downLoad/downLoad",
+		"style": {}
+	}, {
+		"path": "components/register/register",
+		"style": {
+			"navigationBarTitleText": "注册协议"
+		}
+	}, {
+		"path": "components/privacy/privacy",
+		"style": {
+			"navigationBarTitleText": "隐私保护协议"
+		}
+	}],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "极光分期",
+		"navigationBarBackgroundColor": "#007AFF",
+		"backgroundColor": "#FFFFFF",
+		"app-plus": {
+			"titleNView": false
+		}
+	}
+}

@@ -1,0 +1,274 @@
+.page {
+	padding: 40upx;
+	box-sizing: border-box;
+
+	.ipt {
+		color: #000;
+	}
+	.logo {
+		position: absolute;
+		top: 40upx;
+		left: 40upx;
+		.img {
+			width: 182upx;
+			height: 60upx;
+		}
+	}
+	.limit {
+		background: url(../../static/images/bg.png) no-repeat;
+		background-size: 100% 100%;
+		position: relative;
+		font-weight: 500;
+		margin: 0 -40upx;
+		text {
+			font-size: 10upx;
+		}
+		.zero {
+			position: absolute;
+			bottom: 0upx;
+			left: 20%;
+		}
+		.five {
+			position: absolute;
+			top: 40%;
+			left: 6%;
+		}
+		.ten {
+			position: absolute;
+			top: 10upx;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		.fifteen {
+			position: absolute;
+			top: 40%;
+			right: 6%;
+		}
+		.twenty {
+			position: absolute;
+			bottom: 0;
+			right: 20%;
+		}
+		.img {
+			padding: 70upx 98upx 0;
+			width: 548upx;
+			height: 525upx;
+			z-index: -1;
+		}
+	}
+	.tick {
+		.img {
+			width: 680upx;
+			height: 177upx;
+		}
+	}
+	.apply {
+		border-top: 3px solid #ccc;
+
+		height: 240upx;
+		padding-top: 30upx;
+		margin-top: -30upx;
+		image {
+			width: 654upx;
+			height: 177upx;
+		}
+	}
+	.phoneNum {
+		display: flex;
+		width: 100%;
+		height: 120upx;
+		justify-content: center;
+		padding: 20upx;
+		box-sizing: border-box;
+		align-items: center;
+		box-shadow: 3upx 4upx 8upx 8upx #e5e5e5;
+		border-radius: 12upx;
+		.img {
+			width: 30upx;
+			height: 40upx;
+		}
+		.ipt {
+			margin-left: 20upx;
+			height: 100%;
+		}
+	}
+	.code {
+		margin-top: 40upx;
+		display: flex;
+		justify-content: space-between;
+		height: 120upx;
+		width: 100%;
+		.codeBox {
+			display: flex;
+			box-shadow: 3upx 4upx 8upx 8upx #e5e5e5;
+			border-radius: 12upx;
+			align-items: center;
+			justify-content: center;
+			width: 390upx;
+			.img {
+				width: 49upx;
+				height: 60upx;
+			}
+			.ipt {
+				text-align: center;
+
+				width: 230upx;
+			}
+		}
+		.sendBtn {
+			color: #fff;
+			width: 250upx;
+			border-radius: 30upx;
+			background: linear-gradient(to bottom, #f72030 0%, #ff5428 100%);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+	.cece {
+		margin: 30upx 0;
+		.btn {
+			border-radius: 40upx;
+			background-color: #fbca85;
+			color: #fff;
+			box-shadow: 3upx 4upx 8upx 8upx #e5e5e5;
+		}
+	}
+	.protocol {
+		padding-bottom: 60upx;
+		display: flex;
+		.check {
+		}
+		.img {
+			width: 20px;
+			height: 20px;
+		}
+		.desc {
+			margin-left: 10upx;
+			font-size: 32upx;
+			.agree {
+			}
+			.policy {
+				color: #a94246;
+			}
+		}
+	}
+	.info {
+		margin: 0 -40upx;
+		padding: 0 40upx;
+		background-color: #fff6f7;
+		overflow: hidden;
+		.message {
+			padding-top: 40upx;
+			width: 100%;
+			.line {
+				color: #f02429;
+			}
+			.title {
+				font-weight: bold;
+				height: 130upx;
+			}
+			.liuyan {
+				display: flex;
+				height: 140upx;
+				align-items: center;
+				padding: 20upx 0;
+				border-bottom: 2px solid #ccc;
+				box-sizing: border-box;
+				&:last-child {
+					border-bottom: none;
+				}
+				.avatar {
+					.img {
+						width: 80upx;
+						height: 80upx;
+						background-color: #007aff;
+						border-radius: 50%;
+					}
+				}
+
+				.list {
+					display: flex;
+					flex-direction: column;
+					text-align: left;
+					margin-left: 30upx;
+					color: #bbb6b5;
+					.top {
+						.phone {
+							font-size: 30upx;
+							color: #666;
+						}
+						.state {
+							width: 120upx;
+							padding: 5upx 10upx;
+							text-align: center;
+							margin-left: 20upx;
+							background-color: #ed9e1b;
+							border-radius: 5upx;
+							font-size: 24upx;
+							color: #fff;
+						}
+					}
+					.footer {
+						font-size: 28upx;
+						margin-top: 10upx;
+						font-weight: normal;
+					}
+				}
+			}
+		}
+	}
+	.reason {
+		padding-top: 60upx;
+
+		.reason_top {
+			display: flex;
+			align-items: center;
+			color: #e43a46;
+			font-size: 36upx;
+			font-weight: 600;
+			.imgL,
+			.imgR {
+				width: 170upx;
+				height: 54upx;
+			}
+			.imgR {
+				transform: rotate(180deg);
+			}
+		}
+		.reason_footer {
+			margin-top: 20upx;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			.img {
+				width: 320upx;
+				height: 160upx;
+				padding-bottom: 20upx;
+			}
+		}
+	}
+
+	.footerBox {
+		margin: 20upx -40upx 0;
+		background-color: #f8f8f8;
+		height: 365upx;
+		display: flex;
+		flex-direction: column;
+		color: #707070;
+		font-weight: 600;
+		align-items: center;
+		.title1 {
+			font-size: 30upx;
+			margin: 20upx;
+		}
+		.title2 {
+			font-size: 40upx;
+			margin: 20upx;
+		}
+		.title3 {
+			font-size: 24upx;
+			margin: 20upx;
+		}
+	}
+}
