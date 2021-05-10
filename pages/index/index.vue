@@ -289,7 +289,7 @@
 				$H.post(
 					'/loan/api/user/getAuthCode', {
 						authCodeType: 1,
-						majia: 'tudoujiebei',
+						majia: 'jiguangfenqi',
 						mobile
 					}, {
 						token: false

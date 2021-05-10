@@ -78,6 +78,7 @@ export default {
       position: absolute;
       z-index: 2;
       bottom: 12%;
+	  text-align: center;
       .btn-ok {
         width: 58%;
       }
