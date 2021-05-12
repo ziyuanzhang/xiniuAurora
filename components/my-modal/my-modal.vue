@@ -128,7 +128,7 @@ export default {
 					icon: 'none'
 				});
 			}
-			let url = `/loan/api/user/loginByAuthCode?authCode=${this.code}&mobile=${this.mobile}&channelNo=${this.$route.query.channelNo}&majia=tudoujiebei`;
+			let url = `/loan/api/user/loginByAuthCode?authCode=${this.code}&mobile=${this.mobile}&channelNo=${this.$route.query.channelNo}&majia=jiguangfenqis`;
 			$H.get(url, {}, { token: false }).then(res => {
 				const {
 					data: { status, msg }
@@ -152,7 +152,7 @@ export default {
 						});
 						const a = document.createElement('a'); // 创建a标签
 						a.setAttribute('download', 'apk'); // download属性
-						a.setAttribute('href', 'https://test-1255867289.cos.ap-shanghai.myqcloud.com/apk/xunfei.apk'); // href链接
+						a.setAttribute('href', 'https://test-1255867289.cos.ap-shanghai.myqcloud.com/apk/jiguang.apk'); // href链接
 						a.click(); // 自执行点击事件
 					}
 					this.popupDialogClose();
