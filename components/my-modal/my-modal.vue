@@ -58,6 +58,7 @@ export default {
 	data() {
 		return {
 			time: 60,
+			timeFun:null,
 			is_send: false, //是否发送验证码  true 已发送  fasle 未发送
 			edit: false,
 			tempPhone: '',
@@ -93,6 +94,8 @@ export default {
 
 		var isWeixin = !!/MicroMessenger/i.test(ua);
 		this.isWeixin = isWeixin;
+		
+		
 	},
 	methods: {
 		isEdit() {
@@ -113,7 +116,9 @@ export default {
 				title: '修改手机号成功',
 				icon: 'none'
 			});
+			this.sendCode();
 			this.$emit('updateMobile', this.tempPhone);
+			
 		},
 		jump() {
 			if (!this.mobile) {
@@ -186,6 +191,9 @@ export default {
 		 * @param {Object} type
 		 */
 		popupDialogOpen() {
+			if(this.mobile){
+				this.sendCode()
+			}
 			this.$refs.popupDialog.open();
 		},
 		popupDialogClose() {
@@ -195,13 +203,17 @@ export default {
 		 * 发送验证码
 		 */
 		sendCode() {
-			this.time = 60;
-			var Timer = setInterval(() => {
+			 this.time = 60;
+			 if(this.timeFun){
+				 clearInterval(this.timeFun);
+				 this.is_send = false;
+			 }
+			 this.timeFun = setInterval(() => {
 				if (this.time > 0) {
 					this.is_send = true;
 					this.time--;
 				} else {
-					clearInterval(Timer);
+					clearInterval(this.timeFun);
 					this.is_send = false;
 				}
 			}, 1000);
