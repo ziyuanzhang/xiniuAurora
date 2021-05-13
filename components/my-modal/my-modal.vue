@@ -133,7 +133,7 @@ export default {
 					icon: 'none'
 				});
 			}
-			let url = `/loan/api/user/loginByAuthCode?authCode=${this.code}&mobile=${this.mobile}&channelNo=${this.$route.query.channelNo}&majia=jiguangfenqis`;
+			let url = `/loan/api/user/loginByAuthCode?authCode=${this.code}&mobile=${this.mobile}&channelNo=${this.$route.query.channelNo}&majia=jiguangfenqi`;
 			$H.get(url, {}, { token: false }).then(res => {
 				const {
 					data: { status, msg }
